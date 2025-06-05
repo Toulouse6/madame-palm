@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: 'JosefinSans';
-    src: url('assets/fonts/JosefinSans-Regular.ttf');
+    font-family: 'Gentium';
+    src: url('assets/fonts/gentium-book.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,7 +30,6 @@
 /* HTML Style */
 html,
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -101,7 +100,7 @@ button,
 .intro,
 p,
 .error-message {
-    font-family: 'JosefinSans', Arial, sans-serif;
+    font-family: 'Gentium', Arial, sans-serif;
 }
 
 .file-uploaded {
@@ -125,7 +124,7 @@ p,
     width: 100%;
     line-height: 1;
     font-size: 2.2rem;
-    margin: -1.5rem 0 2.5rem 0;
+    margin: -1.6rem 0 2.5rem 0;
 }
 
 /* File */
@@ -235,7 +234,7 @@ button:hover,
 
     .intro {
         font-size: 2rem;
-        margin: -0.5rem 0 2.5rem 0;
+        margin: -0.6rem 0 2.5rem 0;
     }
 
 
@@ -258,7 +257,7 @@ button:hover,
 
     .intro {
         font-size: 1.8rem;
-        margin: -1rem 0 2rem 0 !important;
+        margin: -1.1rem 0 2rem 0 !important;
     }
 
 }
