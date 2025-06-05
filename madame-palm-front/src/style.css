@@ -115,7 +115,7 @@ p,
     display: none;
 }
 
-h1 {
+.home-title h1 {
     text-align: center;
     text-transform: capitalize;
     font-size: 3.8rem;
@@ -225,7 +225,7 @@ button:hover,
         width: 200px;
     }
 
-    h1 {
+    .home-title h1 {
         font-size: 3.2rem;
     }
 }
@@ -236,7 +236,7 @@ button:hover,
         width: 100%;
     }
 
-    h1 {
+    .home-title h1 {
         font-size: 3rem;
         margin: 5rem 0 1rem 0;
     }
@@ -251,7 +251,7 @@ button:hover,
 
 @media (max-width: 630px) {
 
-    h1 {
+    .home-title h1 {
         font-size: 2.5rem;
         margin: 3rem 0 1.3rem !important;
     }
@@ -284,9 +284,8 @@ button:hover,
         bottom: 8%;
     }
 
-    h1 {
+    .home-title h1 {
         margin: 2.5rem 0 2.5rem 0 !important;
-        font-size: 2.5rem !important;
     }
 
     .intro {

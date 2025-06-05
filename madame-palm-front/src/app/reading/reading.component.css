@@ -194,6 +194,17 @@
     pointer-events: none;
 }
 
+.reading-title h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3.8rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(189, 97, 183, 0.2);
+    font-weight: 500;
+    color: #ffe6f4;
+    margin: 3rem 0 2rem 0;
+}
+
 /* Typography */
 h2 {
     color: #5f143f;
@@ -328,6 +339,10 @@ h2 {
         margin-top: 2rem;
         padding: 0 0.5rem;
     }
+
+    .reading-title h1 {
+        font-size: 3.2rem;
+    }
 }
 
 @media (max-width: 750px) {
@@ -338,6 +353,10 @@ h2 {
 
     .reading-content {
         padding: 0 1rem;
+    }
+
+    .reading-title h1 {
+        font-size: 3rem;
     }
 
     h2 {
@@ -352,6 +371,11 @@ h2 {
         grid-template-columns: 1fr;
     }
 
+    .reading-title h1 {
+        margin: 2rem 0 2rem 0;
+        font-size: 2.6rem;
+    }
+
     .summary-card.result-card {
         grid-column: auto;
         width: 100%;
@@ -363,7 +387,7 @@ h2 {
 
     .line-content p,
     .summary-card p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .share-buttons {
@@ -380,6 +404,15 @@ h2 {
 
     .results-container {
         margin-top: -0.8rem;
+    }
+
+    .reading-title h1 {
+        margin: 3.5rem 0 2.5rem 0 !important;
+    }
+
+    .line-content p,
+    .summary-card p {
+        font-size: 1.1rem;
     }
 
 }
