@@ -193,7 +193,7 @@ button:hover,
 
 /* Loading Spinner */
 .loading-spinner {
-    margin: 0;
+    margin-top: -1rem;
     display: flex;
     justify-content: center;
     align-items: center;
