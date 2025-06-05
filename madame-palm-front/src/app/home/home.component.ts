@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
         });
     }
 
-    // Background Audio
+    // Background Audio & Video
     private playBackgroundAudio(): void {
         if (this.backgroundAudio.paused) {
             this.backgroundAudio.play().catch(err => {
@@ -49,7 +49,11 @@ export class HomeComponent implements OnInit {
             });
         }
     }
-    
+
+    resumeSmokePlayback() {
+        history.replaceState({ ...history.state, triggerVideo: true }, '');
+    }
+
     // On file select
     onFileSelected(event: Event): void {
         const file = (event.target as HTMLInputElement).files?.[0];
@@ -123,7 +127,8 @@ export class HomeComponent implements OnInit {
                                 this.router.navigate(['/read-hand'], {
                                     state: {
                                         reading: response.reading,
-                                        cost: response.cost || null
+                                        cost: response.cost,
+                                        triggerVideo: true
                                     }
                                 });
                                 return;

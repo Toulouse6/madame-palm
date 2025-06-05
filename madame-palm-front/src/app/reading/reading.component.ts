@@ -38,9 +38,10 @@ export class ReadingComponent implements OnInit, AfterViewInit {
 
     // AfterViewInit for smoke effect
     ngAfterViewInit(): void {
-        if (this.smokeVideo) {
-            const videoEl = this.smokeVideo.nativeElement;
+        const shouldPlay = history.state?.['triggerVideo'] ?? false;
 
+        if (shouldPlay && this.smokeVideo) {
+            const videoEl = this.smokeVideo.nativeElement;
             videoEl.currentTime = 2.5;
             videoEl.play().catch(err => {
                 console.warn('Smoke video failed:', err);
