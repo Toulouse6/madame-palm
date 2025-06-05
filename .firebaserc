@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "madame-palm"
-  }
+    "default": "madame-palm",
+    "prod": "madame-palm"
+  },
+  "targets": {},
+  "etags": {}
 }

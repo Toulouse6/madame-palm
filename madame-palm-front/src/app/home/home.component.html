@@ -24,9 +24,12 @@
                         <input [disabled]="isLoading" type="file" name="image" id="inputGroupFile02"
                             class="form-control input-box" (change)="onFileSelected($event)" accept="image/*"
                             capture="environment" />
-                        <label for="inputGroupFile02" class="custom-upload-btn">
-                            {{ selectedFile ? 'Reading' : 'Show my destiny' }}
+
+                        <label [class.disabled]="isLoading" [attr.aria-disabled]="isLoading" for="inputGroupFile02"
+                            class="custom-upload-btn">
+                            Show my destiny
                         </label>
+
 
                         <span class="file-uploaded">{{ selectedFile }}</span>
                     </div>

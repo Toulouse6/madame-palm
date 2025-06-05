@@ -42,7 +42,8 @@ body {
     padding: 0;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-color: #420E36;
     background-color: linear-gradient(90deg, rgba(66, 14, 54, 1) 0%, rgba(88, 18, 62, 1) 50%, rgba(66, 14, 54, 1) 100%);
 }
@@ -185,6 +186,12 @@ button:hover,
     border-color: #5f143f;
 }
 
+.custom-upload-btn.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 /* Loading Spinner */
 .loading-spinner {
     margin: 0.5rem 0 0 0;
@@ -226,6 +233,11 @@ button:hover,
 
 @media (max-width: 800px) {
 
+    html,
+    body {
+        overflow-y: auto !important;
+    }
+
     .flex-wrapper {
         width: 100%;
     }
@@ -239,6 +251,7 @@ button:hover,
         font-size: 2rem;
         margin: -0.5rem 0 2.5rem 0;
     }
+
 
 }
 

@@ -73,7 +73,7 @@ export class HomeComponent implements OnInit {
             // Auto-submit
             setTimeout(() => {
                 this.submit();
-            }, 1500); // Delay to allow image preview
+            }, 1000); // Delay to allow image preview
         };
         reader.readAsDataURL(file);
     }
