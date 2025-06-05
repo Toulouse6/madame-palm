@@ -7,13 +7,6 @@
 }
 
 @font-face {
-    font-family: 'Crowk';
-    src: url('assets/fonts/Crowk-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'JosefinSans';
     src: url('assets/fonts/JosefinSans-Regular.ttf');
     font-weight: normal;
@@ -43,8 +36,7 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-color: #420E36;
-    background-color: linear-gradient(90deg, rgba(66, 14, 54, 1) 0%, rgba(88, 18, 62, 1) 50%, rgba(66, 14, 54, 1) 100%);
+    background: linear-gradient(90deg, rgba(66, 14, 54, 1) 0%, rgba(88, 18, 62, 1) 50%, rgba(66, 14, 54, 1) 100%);
 }
 
 /* Layout */
@@ -106,6 +98,7 @@ button,
     font-family: 'kumi', Arial, sans-serif;
 }
 
+.intro,
 p,
 .error-message {
     font-family: 'JosefinSans', Arial, sans-serif;
@@ -128,7 +121,6 @@ p,
 
 .intro {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    font-family: 'Crowk', Arial, sans-serif;
     color: #fff;
     width: 100%;
     line-height: 1;
@@ -256,12 +248,12 @@ button:hover,
         margin: 7rem 0 1.5rem !important;
     }
 
-    .loading-spinner img {
-        width: 11rem;
+    .loading-spinner {
+        margin-top: 0;
     }
 
-    .actions {
-        margin-top: 1rem;
+    .loading-spinner img {
+        width: 11rem;
     }
 
     .intro {
@@ -276,7 +268,6 @@ button:hover,
 
     .container {
         padding: 1rem 0rem 5rem;
-        width: 100%;
     }
 
     .wrapper:before {
@@ -295,7 +286,7 @@ button:hover,
     }
 
     .actions {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
 }
@@ -303,7 +294,7 @@ button:hover,
 @media (max-width: 385px) {
 
     .share-buttons {
-        gap: 10;
+        gap: 10px;
     }
 
     button {

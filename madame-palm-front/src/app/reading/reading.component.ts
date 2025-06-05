@@ -168,7 +168,6 @@ export class ReadingComponent implements OnInit, AfterViewInit {
                     position: 'relative',
                     overflow: 'hidden',
                     boxSizing: 'border-box',
-                    backgroundColor: '#420E36',
                     background: 'linear-gradient(90deg, rgba(66, 14, 54, 1) 0%, rgba(88, 18, 62, 1) 50%, rgba(66, 14, 54, 1) 100%)'
                 })
 
