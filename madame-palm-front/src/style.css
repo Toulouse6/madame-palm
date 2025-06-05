@@ -193,7 +193,7 @@ button:hover,
 
 /* Loading Spinner */
 .loading-spinner {
-    margin: 0.5rem 0 0 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,10 +287,6 @@ button:hover,
     .intro {
         font-size: 1.4rem;
         margin: -2rem 0 1rem 0 !important;
-    }
-
-    .loading-spinner {
-        margin: 1rem 0 0 0;
     }
 
     .input-group {
