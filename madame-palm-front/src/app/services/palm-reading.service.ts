@@ -58,7 +58,7 @@ export class PalmReadingService {
                         const readingIssueType = this.getReadingIssueType(lowered);
                         const hasReadingIssue = !!readingIssueType;
 
-                        if (isFallback || !readingIssueType || readingIssueType === 'fallback') {
+                        if (isFallback || readingIssueType === 'fallback') {
                             console.warn("Fallback response 𓂀");
                             this.loadFallbackReading(observer, true);
                             return;

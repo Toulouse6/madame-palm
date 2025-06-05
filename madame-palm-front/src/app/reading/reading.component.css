@@ -340,6 +340,14 @@ h2 {
         padding: 0 1rem;
     }
 
+    h2 {
+        margin-bottom: -5px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+
     .results-container {
         grid-template-columns: 1fr;
     }
@@ -349,13 +357,6 @@ h2 {
         width: 100%;
     }
 
-    h2 {
-        margin-bottom: -5px;
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 630px) {
     .summary-card {
         margin-top: 0.3rem;
     }
