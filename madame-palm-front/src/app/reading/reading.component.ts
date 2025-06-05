@@ -168,9 +168,9 @@ export class ReadingComponent implements OnInit, AfterViewInit {
                     position: 'relative',
                     overflow: 'hidden',
                     boxSizing: 'border-box',
-                    background: 'linear-gradient(135deg,rgba(79, 68, 96, 0.95) 0%,rgba(85, 72, 105, 0.92) 35%,rgba(79, 70, 95, 0.85) 70%,rgba(56, 48, 70, 0.7) 100%)'
-                });
-
+                    backgroundColor: '#420E36',
+                    background: 'linear-gradient(90deg, rgba(66, 14, 54, 1) 0%, rgba(88, 18, 62, 1) 50%, rgba(66, 14, 54, 1) 100%)'
+                })
 
                 // Disable animations / transitions
                 const all = container.querySelectorAll('*');

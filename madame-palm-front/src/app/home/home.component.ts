@@ -49,11 +49,7 @@ export class HomeComponent implements OnInit {
             });
         }
     }
-
-    private isMobile(): boolean {
-        return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    }
-
+    
     // On file select
     onFileSelected(event: Event): void {
         const file = (event.target as HTMLInputElement).files?.[0];

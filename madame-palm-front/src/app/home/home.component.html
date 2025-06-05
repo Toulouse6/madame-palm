@@ -20,7 +20,8 @@
             <div *ngIf="!isLoading">
                 <div class="actions">
 
-                    <div class="input-group mb-3">
+                    <!-- Upload input -->
+                    <div class="input-group mb-3" *ngIf="!previewUrl">
                         <input [disabled]="isLoading" type="file" name="image" id="inputGroupFile02"
                             class="form-control input-box" (change)="onFileSelected($event)" accept="image/*"
                             capture="environment" />
@@ -30,15 +31,16 @@
                             Show my destiny
                         </label>
 
-
                         <span class="file-uploaded">{{ selectedFile }}</span>
                     </div>
 
+                    <!-- Preview Image -->
                     <div *ngIf="previewUrl" class="preview">
                         <img [src]="previewUrl" alt="Hand preview" />
                     </div>
 
                 </div>
             </div>
+
         </div>
     </div>
