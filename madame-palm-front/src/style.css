@@ -249,8 +249,30 @@ button:hover,
 
 }
 
+@media (max-width: 630px) {
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 3rem 0 1.3rem !important;
+    }
+
+    .loading-spinner img {
+        width: 11rem;
+    }
+
+    .actions {
+        margin-top: 1rem;
+    }
+
+    .intro {
+        font-size: 1.8rem;
+        margin: -1rem 0 2rem 0 !important;
+    }
+
+}
+
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 440px) {
 
     .container {
         padding: 1rem 0rem 5rem;
