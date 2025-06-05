@@ -1,0 +1,19 @@
+{
+    "hosting": {
+        "public": "madame-palm-front/dist/madame-palm/browser",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    },
+    "functions": {
+        "source": "madame-palm-backend/functions"
+    }
+}

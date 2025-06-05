@@ -1,0 +1,13 @@
+# Angular build
+/dist/
+/.angular/
+/node_modules/
+/firebase-debug.log*
+
+# IDE/dev
+*.log
+*.local
+.DS_Store
+
+# Env files
+.env

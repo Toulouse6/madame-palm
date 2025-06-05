@@ -1,0 +1,66 @@
+<div id="readingContainer">
+
+    <video #smokeVideo autoplay muted playsinline class="smoke-effect">
+        <source src="assets/videos/smoke-effect.mp4" type="video/mp4" />
+    </video>
+
+    <div class="wrapper">
+        <div class="flex-wrapper">
+            <div class="container reading-title">
+          
+                <h1>Your Palm Reading</h1>
+
+                <ng-container *ngIf="!isLoading; else loadingBlock">
+
+                    <ng-container *ngIf="hasReading; else noReadingBlock">
+
+                        <div class="reading-content">
+                            <div class="results-container">
+
+                                <!-- Palm Lines -->
+                                <div *ngFor="let line of palmLines" class="palm-line result-card">
+                                    <div class="line-header">
+                                        <h2>{{ line.title }}</h2>
+                                    </div>
+                                    <div class="line-content">
+                                        <p>{{ line.content }}</p>
+                                    </div>
+                                </div>
+
+                                <!-- Summary -->
+                                <div *ngIf="summary" class="summary-card result-card">
+                                    <h2>Summary</h2>
+                                    <p>{{ summary }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+
+                </ng-container>
+
+                <!-- Loading Spinner -->
+                <ng-template #loadingBlock>
+                    <div class="loading-spinner">
+                        <img src="assets/images/loading-gif.gif" alt="Loading..." />
+                    </div>
+                </ng-template>
+
+                <!-- No Reading Available -->
+                <ng-template #noReadingBlock>
+                    <div class="no-reading">
+                        <button routerLink="/">Upload Palm Image</button>
+                    </div>
+                </ng-template>
+
+                <!-- Action Buttons -->
+                <div class="actions" *ngIf="hasReading">
+                    <div class="share-buttons">
+                        <button (click)="copyToClipboard()">Copy reading</button>
+                        <button (click)="shareReadingScreenshot()">Share your fate</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="flex-wrapper">
+        <div class="container home-title">
+
+            <h1>Madame Palm’s Chamber</h1>
+            <p class="intro">Let your palm speak its secrets</p>
+
+            <!-- Loading -->
+            <div *ngIf="isLoading" class="loading-spinner">
+                <img src="assets/images/loading-gif.gif" alt="Loading..." />
+            </div>
+
+            <!-- Error -->
+            <div *ngIf="errorMessage" class="error-message">
+                {{ errorMessage }}
+            </div>
+
+
+            <!-- Buttons -->
+            <div *ngIf="!isLoading">
+                <div class="actions">
+
+                    <div class="input-group mb-3">
+                        <input [disabled]="isLoading" type="file" name="image" id="inputGroupFile02"
+                            class="form-control input-box" (change)="onFileSelected($event)" accept="image/*"
+                            capture="environment" />
+                        <label for="inputGroupFile02" class="custom-upload-btn">
+                            {{ selectedFile ? 'Reading' : 'Show my destiny' }}
+                        </label>
+
+                        <span class="file-uploaded">{{ selectedFile }}</span>
+                    </div>
+
+                    <div *ngIf="previewUrl" class="preview">
+                        <img [src]="previewUrl" alt="Hand preview" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
