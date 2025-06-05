@@ -123,7 +123,7 @@ p,
     text-shadow: 0 0 10px rgba(189, 97, 183, 0.2);
     font-weight: 500;
     color: #ffe6f4;
-    margin: 5rem 0 2rem 0;
+    margin: 7rem 0 2rem 0;
 }
 
 .intro {
@@ -237,8 +237,8 @@ button:hover,
     }
 
     .home-title h1 {
-        font-size: 3rem;
-        margin: 5rem 0 1rem 0;
+        font-size: 2.8rem;
+        margin: 6rem 0 1rem 0;
     }
 
     .intro {
@@ -252,8 +252,8 @@ button:hover,
 @media (max-width: 630px) {
 
     .home-title h1 {
-        font-size: 2.5rem;
-        margin: 3rem 0 1.3rem !important;
+        font-size: 2.2rem;
+        margin: 7rem 0 1.5rem !important;
     }
 
     .loading-spinner img {
@@ -282,10 +282,6 @@ button:hover,
     .wrapper:before {
         background-size: 90%;
         bottom: 8%;
-    }
-
-    .home-title h1 {
-        margin: 2.5rem 0 2.5rem 0 !important;
     }
 
     .intro {
