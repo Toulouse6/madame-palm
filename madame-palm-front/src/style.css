@@ -13,6 +13,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gentium-italic';
+    src: url('assets/fonts/gentium-plus.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Animations */
 @keyframes fadeInWarning {
     to {
@@ -36,7 +43,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    background: linear-gradient(90deg, rgba(66, 14, 54, 1) 0%, rgba(88, 18, 62, 1) 50%, rgba(66, 14, 54, 1) 100%);
+    background: linear-gradient(135deg, #2f2b4d 0%, #393466 20%, #403971 35%, #453676 50%, #342b5b 65%, #2c254e 80%, #221d3a 100%) !important;
 }
 
 /* Layout */
@@ -66,7 +73,7 @@ body {
     width: 100%;
     height: 100%;
     max-height: 100vh;
-    background-image: url('assets/images/grandmamma.png');
+    background-image: url('assets/images/la-grandmamma.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -98,7 +105,10 @@ button,
     font-family: 'kumi', Arial, sans-serif;
 }
 
-.intro,
+.intro {
+    font-family: 'Gentium-italic', Arial, sans-serif;
+}
+
 p,
 .error-message {
     font-family: 'Gentium', Arial, sans-serif;
@@ -115,7 +125,7 @@ p,
     letter-spacing: 3px;
     text-shadow: 0 0 10px rgba(189, 97, 183, 0.2);
     font-weight: 500;
-    color: #ffe6f4;
+    color: #e1dbfb;
     margin: 7rem 0 2rem 0;
 }
 
@@ -147,7 +157,7 @@ p,
 /* Preview */
 .preview img {
     width: 180px;
-    border: 2px dashed #ffe6f4;
+    border: 2px dashed #e1dbfb;
     border-radius: 1rem;
     margin-top: 0.5rem;
 }
@@ -158,9 +168,9 @@ button {
     white-space: nowrap;
     font-size: 1.1rem;
     letter-spacing: 1px;
-    background-color: #5f143f;
-    color: #ffe6f4;
-    border: 1px solid #ffe6f4;
+    background-color: #36198a;
+    color: #e1dbfb;
+    border: 1px solid #e1dbfb;
     text-align: center;
     padding: 0.5rem 1.5rem;
     border-radius: 0.3rem !important;
@@ -171,10 +181,10 @@ button {
 
 button:hover,
 .custom-upload-btn:hover {
-    background-color: #ffe6f4cf;
-    color: #5f143f;
+    background-color: #e1dbfbcf;
+    color: #36198a;
     box-shadow: 0 2px 8px rgba(255, 231, 247, 0.8);
-    border-color: #5f143f;
+    border-color: #36198a;
 }
 
 .custom-upload-btn.disabled {
@@ -271,8 +281,8 @@ button:hover,
     }
 
     .wrapper:before {
-        background-size: 90%;
-        bottom: 8%;
+        background-size: 85%;
+        bottom: 10%;
     }
 
     .home-title h1 {
@@ -283,7 +293,7 @@ button:hover,
 
     .intro {
         font-size: 1.5rem;
-        margin: -0.8rem 0 1rem 0;
+        margin: -0.5rem 0 1rem 0;
     }
 
     .input-group {

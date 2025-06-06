@@ -31,8 +31,8 @@
 
 /* Screenshot Mode */
 #readingContainer.screenshot-mode {
-    background: linear-gradient(90deg, rgba(66, 14, 54, 1) 0%, rgba(88, 18, 62, 1) 50%, rgba(66, 14, 54, 1) 100%) !important;
-    color: #5f143f !important;
+    background: linear-gradient(135deg, #2f2b4d 0%, #393466 20%, #403971 35%, #453676 50%, #342b5b 65%, #2c254e 80%, #221d3a 100%) !important;
+    color: #36198a !important;
     width: 1080px !important;
     height: 1920px !important;
     margin: 0 auto !important;
@@ -43,8 +43,8 @@
 
 /* Screenshot Layout */
 #readingContainer.screenshot-mode .wrapper::before {
-    bottom: 20%;
-    left: 30%;
+    bottom: 0 !important;
+    left: 25% !important;
     background-size: 65% !important;
 }
 
@@ -85,7 +85,7 @@
     margin-bottom: 50px !important;
     padding: 0 !important;
     text-align: center !important;
-    color: #ffe6f4 !important;
+    color: #e1dbfb !important;
 }
 
 #readingContainer.screenshot-mode .container {
@@ -117,17 +117,17 @@
 }
 
 #readingContainer.screenshot-mode .palm-line {
-    background-color: #ffe6f4cf !important;
+    background-color: #e1dbfbcf !important;
     box-shadow: none !important;
     border-radius: 16px !important;
-    border: 1px solid #ffe6f4 !important;
+    border: 1px solid #e1dbfb !important;
     padding: 40px 30px !important;
     margin-bottom: 0 !important;
     width: 100% !important;
 }
 
 #readingContainer.screenshot-mode .palm-line h2 {
-    color: #5f143f !important;
+    color: #36198a !important;
     font-size: 60px !important;
     margin-bottom: 12px !important;
 }
@@ -139,7 +139,7 @@
 }
 
 #readingContainer.screenshot-mode .summary-card {
-    background-color: #ffe6f4cf !important;
+    background-color: #e1dbfbcf !important;
     box-shadow: none !important;
     backdrop-filter: blur(8px) !important;
     border-radius: 16px !important;
@@ -191,13 +191,13 @@
     letter-spacing: 3px;
     text-shadow: 0 0 10px rgba(189, 97, 183, 0.2);
     font-weight: 500;
-    color: #ffe6f4;
+    color: #e1dbfb;
     margin: 3.5rem 0 1.5rem 0;
 }
 
 /* Typography */
 h2 {
-    color: #5f143f;
+    color: #36198a;
     margin: 0;
     letter-spacing: 1px;
     font-weight: 500;
@@ -227,7 +227,7 @@ h2 {
 
 .result-card {
     width: 100%;
-    border: 2px solid #ffe6f4;
+    border: 2px solid #e1dbfb;
     border-radius: 12px;
     padding: 1.2rem 1rem;
     box-shadow: 0 2px 8px rgba(189, 97, 160, 0.2);
@@ -244,10 +244,10 @@ h2 {
 }
 
 .palm-line {
-    background-color: #ffe6f4cf;
+    background-color: #e1dbfbcf;
     padding: 1.2rem 1.5rem;
     border-radius: 0.5rem;
-    border: 1px solid #ffe6f4;
+    border: 1px solid #e1dbfb;
     box-shadow: 0 2px 8px rgba(189, 97, 160, 0.2);
     text-align: left;
     display: flex;
@@ -272,8 +272,8 @@ h2 {
     width: 100%;
     margin: 0;
     padding: 1rem;
-    background-color: #ffe6f4cf;
-    border: 1px solid #ffe6f4;
+    background-color: #e1dbfbcf;
+    border: 1px solid #e1dbfb;
     border-radius: 0.5rem;
     box-shadow: 0 2px 8px rgba(189, 97, 160, 0.2);
     text-align: center;
@@ -388,7 +388,7 @@ h2 {
 @media (max-width: 440px) {
 
     .reading-title h1 {
-        margin: 2.5rem 0 2rem 0;
+        margin: 2.2rem 0 2rem 0;
         font-size: 2.8rem;
     }
 
@@ -421,7 +421,7 @@ h2 {
 
     .reading-title h1 {
         font-size: 2.4rem;
-        margin: 1.2rem 0 1.5rem 0;
+        margin: 1rem 0 1.5rem 0;
     }
 
     .results-container {

@@ -168,7 +168,7 @@ export class ReadingComponent implements OnInit, AfterViewInit {
                     position: 'relative',
                     overflow: 'hidden',
                     boxSizing: 'border-box',
-                    background: 'linear-gradient(90deg, rgba(66, 14, 54, 1) 0%, rgba(88, 18, 62, 1) 50%, rgba(66, 14, 54, 1) 100%)'
+                    background: 'linear-gradient(135deg, #2f2b4d 0%, #393466 20%, #403971 35%, #453676 50%, #342b5b 65%, #2c254e 80%, #221d3a 100%)'
                 })
 
                 // Disable animations / transitions
