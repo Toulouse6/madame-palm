@@ -32,7 +32,7 @@
 /* Screenshot Mode */
 #readingContainer.screenshot-mode {
     background: linear-gradient(135deg, #2f2b4d 0%, #393466 20%, #403971 35%, #453676 50%, #342b5b 65%, #2c254e 80%, #221d3a 100%) !important;
-    color: #36198a !important;
+    color: #423865 !important;
     width: 1080px !important;
     height: 1920px !important;
     margin: 0 auto !important;
@@ -85,7 +85,7 @@
     margin-bottom: 50px !important;
     padding: 0 !important;
     text-align: center !important;
-    color: #e1dbfb !important;
+    color: #eeeaff!important;
 }
 
 #readingContainer.screenshot-mode .container {
@@ -120,14 +120,14 @@
     background-color: #e1dbfbcf !important;
     box-shadow: none !important;
     border-radius: 16px !important;
-    border: 1px solid #e1dbfb !important;
+    border: 1px solid #eeeaff !important;
     padding: 40px 30px !important;
     margin-bottom: 0 !important;
     width: 100% !important;
 }
 
 #readingContainer.screenshot-mode .palm-line h2 {
-    color: #36198a !important;
+    color: #423865 !important;
     font-size: 60px !important;
     margin-bottom: 12px !important;
 }
@@ -191,13 +191,13 @@
     letter-spacing: 3px;
     text-shadow: 0 0 10px rgba(189, 97, 183, 0.2);
     font-weight: 500;
-    color: #e1dbfb;
+    color: #eeeaff;
     margin: 3.5rem 0 1.5rem 0;
 }
 
 /* Typography */
 h2 {
-    color: #36198a;
+    color: #423865;
     margin: 0;
     letter-spacing: 1px;
     font-weight: 500;
@@ -227,7 +227,7 @@ h2 {
 
 .result-card {
     width: 100%;
-    border: 2px solid #e1dbfb;
+    border: 2px solid #eeeaff;
     border-radius: 12px;
     padding: 1.2rem 1rem;
     box-shadow: 0 2px 8px rgba(189, 97, 160, 0.2);
@@ -247,7 +247,7 @@ h2 {
     background-color: #e1dbfbcf;
     padding: 1.2rem 1.5rem;
     border-radius: 0.5rem;
-    border: 1px solid #e1dbfb;
+    border: 1px solid #eeeaff;
     box-shadow: 0 2px 8px rgba(189, 97, 160, 0.2);
     text-align: left;
     display: flex;
@@ -273,7 +273,7 @@ h2 {
     margin: 0;
     padding: 1rem;
     background-color: #e1dbfbcf;
-    border: 1px solid #e1dbfb;
+    border: 1px solid #eeeaff;
     border-radius: 0.5rem;
     box-shadow: 0 2px 8px rgba(189, 97, 160, 0.2);
     text-align: center;

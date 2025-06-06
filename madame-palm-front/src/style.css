@@ -125,7 +125,7 @@ p,
     letter-spacing: 3px;
     text-shadow: 0 0 10px rgba(189, 97, 183, 0.2);
     font-weight: 500;
-    color: #e1dbfb;
+    color: #eeeaff;
     margin: 7rem 0 2rem 0;
 }
 
@@ -157,7 +157,7 @@ p,
 /* Preview */
 .preview img {
     width: 180px;
-    border: 2px dashed #e1dbfb;
+    border: 2px dashed #eeeaff;
     border-radius: 1rem;
     margin-top: 0.5rem;
 }
@@ -168,9 +168,9 @@ button {
     white-space: nowrap;
     font-size: 1.1rem;
     letter-spacing: 1px;
-    background-color: #36198a;
-    color: #e1dbfb;
-    border: 1px solid #e1dbfb;
+    background-color: #423865;
+    color: #eeeaff;
+    border: 1px solid #eeeaff;
     text-align: center;
     padding: 0.5rem 1.5rem;
     border-radius: 0.3rem !important;
@@ -182,9 +182,9 @@ button {
 button:hover,
 .custom-upload-btn:hover {
     background-color: #e1dbfbcf;
-    color: #36198a;
+    color: #423865;
     box-shadow: 0 2px 8px rgba(255, 231, 247, 0.8);
-    border-color: #36198a;
+    border-color: #423865;
 }
 
 .custom-upload-btn.disabled {
