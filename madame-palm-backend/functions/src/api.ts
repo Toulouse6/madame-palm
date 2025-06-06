@@ -51,17 +51,17 @@ Speak directly to the person as "you" — not "they" or "the person", and begin 
 
 Do not use any Markdown formatting (no asterisks, bold, italics, or headers). Only plain text.
 
-For each major line — Heart Line, Head Line, and Life Line — write one sentence (max 150 characters) explaining its meaning and significance.
+For each major line — Heart Line, Head Line, and Life Line — write one sentence (max 120 characters) explaining its meaning and significance.
 
-Then, write an overall summary of this person's character or destiny based on their palm (max 250 characters).
+Then, write an overall summary of this person's character or destiny based on their palm (max 180 characters).
 
 Respond exactly in this format:
 
-Heart Line: [max 150 characters]
-Head Line: [max 150 characters]
-Life Line: [max 150 characters]
+Heart Line: [max 120 characters]
+Head Line: [max 120 characters]
+Life Line: [max 120 characters]
 
-Overall Summary: [max 250 characters]
+Overall Summary: [max 180 characters]
 `;
 
         const response = await openai.chat.completions.create({

@@ -192,7 +192,7 @@
     text-shadow: 0 0 10px rgba(189, 97, 183, 0.2);
     font-weight: 500;
     color: #ffe6f4;
-    margin: 4rem 0 2rem 0;
+    margin: 3.5rem 0 1.5rem 0;
 }
 
 /* Typography */
@@ -271,7 +271,7 @@ h2 {
     grid-column: 1 / -1;
     width: 100%;
     margin: 0;
-    padding: 1.5rem 1rem 1rem;
+    padding: 1rem;
     background-color: #ffe6f4cf;
     border: 1px solid #ffe6f4;
     border-radius: 0.5rem;
@@ -316,12 +316,17 @@ h2 {
     }
 
     .reading-content {
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding: 0 0.5rem;
     }
 
     .reading-title h1 {
         font-size: 3.2rem;
+        margin: 2.5rem 0 0.5rem 0;
+    }
+
+    .share-buttons {
+        margin-top: 0.5rem;
     }
 }
 
@@ -337,7 +342,6 @@ h2 {
 
     .reading-title h1 {
         font-size: 3rem;
-        margin: 3rem 0 1.5rem 0;
     }
 
     h2 {
@@ -345,19 +349,17 @@ h2 {
         font-size: 1.3rem;
     }
 
-    .share-buttons {
-        margin-top: 0.5rem;
-    }
 }
 
 @media (max-width: 600px) {
 
     .results-container {
         grid-template-columns: 1fr;
+        row-gap: 0.8rem;
     }
 
     .reading-title h1 {
-        margin: 2rem 0 1.5rem 0;
+        margin: 2rem 0 1rem 0;
         font-size: 2.5rem;
     }
 
@@ -386,27 +388,28 @@ h2 {
 @media (max-width: 440px) {
 
     .reading-title h1 {
-        margin: 2rem 0 2rem 0 !important;
-        font-size: 2.5rem;
+        margin: 2.5rem 0 2rem 0;
+        font-size: 2.8rem;
     }
 
     .results-container {
-        margin-top: -0.5rem !important;
-        padding: 0 0.8rem !important;
+        margin-top: -0.5rem;
+        padding: 0 0.8rem;
+        row-gap: 0.5rem;
     }
 
     .palm-line {
-        padding: 1rem 1.5rem !important;
+        padding: 1rem;
     }
 
     .summary-card {
-        padding: 1rem !important;
-        margin-top: 0.5rem !important;
+        padding: 1rem 0.5rem;
+        margin-top: 0.2rem;
     }
 
     .line-content p,
     .summary-card p {
-        font-size: 1.1rem !important;
+        font-size: 1rem;
     }
 
     .share-buttons {
@@ -417,19 +420,21 @@ h2 {
 @media (max-width: 390px) {
 
     .reading-title h1 {
-        margin: 1rem 0 1.8rem 0 !important;
+        font-size: 2.4rem;
+        margin: 1.2rem 0 1.5rem 0;
     }
 
     .results-container {
-        padding: 0 0.2rem !important;
+        padding: 0 0.2rem;
     }
 
     .line-content p,
     .summary-card p {
-        font-size: 1rem !important;
+        font-size: 0.9rem;
     }
 
     .share-buttons {
+        margin-top: 0.2rem;
         gap: 10px;
     }
 
@@ -438,25 +443,25 @@ h2 {
 
 @media (max-width: 375px) {
 
+    .results-container {
+        padding: 0 0.4rem;
+    }
+
     .reading-title h1 {
         font-size: 2.2rem;
     }
 
-    .results-container {
-        padding: 0 0.4rem !important;
-    }
-
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .palm-line {
-        padding: 1rem !important;
+        padding: 1rem;
     }
 
     .summary-card {
-        padding: 0.5rem !important;
-        margin-top: 0 !important;
+        padding: 0.5rem;
+        margin-top: 0;
     }
 
 }

@@ -245,7 +245,7 @@ button:hover,
 
     .home-title h1 {
         font-size: 2.3rem;
-        margin: 7rem 0 1.5rem;
+        margin: 5.5rem 0 1.5rem;
     }
 
     .loading-spinner {
@@ -266,12 +266,6 @@ button:hover,
 /* Mobile */
 @media (max-width: 440px) {
 
-    html,
-    body {
-        overflow-y: auto !important;
-    }
-
-
     .container {
         padding: 1rem 0rem 5rem;
     }
@@ -282,7 +276,9 @@ button:hover,
     }
 
     .home-title h1 {
+        line-height: 1.1;
         font-size: 2.8rem;
+        margin: 4rem 0 1.2rem;
     }
 
     .intro {
@@ -300,7 +296,7 @@ button:hover,
     }
 
     .loading-spinner {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 
     .preview img {
@@ -314,7 +310,7 @@ button:hover,
 
     .home-title h1 {
         font-size: 2.2rem;
-        margin: 5rem 0 1.5rem;
+        margin: 4rem 0 1.2rem;
     }
 
     .intro {
@@ -322,11 +318,16 @@ button:hover,
     }
 
     button {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 360px) {
+
+    html,
+    body {
+        overflow-y: auto !important;
+    }
 
     button {
         padding: 0.5rem 1.3rem;
