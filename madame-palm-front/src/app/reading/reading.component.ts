@@ -2,7 +2,6 @@ import { NgIf, NgFor } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import html2canvas from 'html2canvas';
-import { PalmReadingResponse } from '../models/reading.model';
 
 @Component({
     selector: 'app-reading',

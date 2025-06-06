@@ -325,7 +325,7 @@ h2 {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 
     .palm-lines-container {
         gap: 15px;
@@ -385,17 +385,22 @@ h2 {
 
 @media (max-width: 440px) {
 
+    .reading-title h1 {
+        margin: 2rem 0 2rem 0 !important;
+        font-size: 2.5rem;
+    }
+
     .results-container {
         margin-top: -0.5rem !important;
-        padding: 0 1.5rem !important;
+        padding: 0 0.8rem !important;
     }
 
     .palm-line {
-        padding: 1.2rem !important;
+        padding: 1rem 1.5rem !important;
     }
 
     .summary-card {
-        padding: 1.2rem !important;
+        padding: 1rem !important;
         margin-top: 0.5rem !important;
     }
 
@@ -404,9 +409,61 @@ h2 {
         font-size: 1.1rem !important;
     }
 
+    .share-buttons {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 390px) {
+
     .reading-title h1 {
-        margin: 5rem 0 2rem 0 !important;
+        margin: 1rem 0 1.8rem 0 !important;
     }
 
+    .results-container {
+        padding: 0 0.2rem !important;
+    }
 
+    .line-content p,
+    .summary-card p {
+        font-size: 1rem !important;
+    }
+
+    .share-buttons {
+        gap: 10px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+
+    .reading-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .results-container {
+        padding: 0 0.4rem !important;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .palm-line {
+        padding: 1rem !important;
+    }
+
+    .summary-card {
+        padding: 0.5rem !important;
+        margin-top: 0 !important;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .share-buttons {
+        margin-top: 0.5rem;
+    }
 }
