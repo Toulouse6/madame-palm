@@ -80,8 +80,8 @@ body {
     opacity: .4;
     z-index: -1;
     pointer-events: none;
-    bottom: 5%;
-    left: 25%;
+    bottom: 0;
+    left: 30%;
 }
 
 .flex-wrapper {
@@ -282,7 +282,8 @@ button:hover,
 
     .wrapper:before {
         background-size: 85%;
-        bottom: 10%;
+        bottom: 26%;
+        left: 0;
     }
 
     .home-title h1 {
@@ -306,7 +307,7 @@ button:hover,
     }
 
     .loading-spinner {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
 
     .preview img {

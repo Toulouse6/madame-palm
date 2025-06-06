@@ -43,9 +43,10 @@
 
 /* Screenshot Layout */
 #readingContainer.screenshot-mode .wrapper::before {
-    bottom: 0 !important;
-    left: 25% !important;
-    background-size: 65% !important;
+    bottom: 40% !important;
+    left: 0 !important;
+    background-position: center !important;
+    background-size: 72% !important;
 }
 
 #readingContainer.screenshot-mode .wrapper {
@@ -80,12 +81,12 @@
 }
 
 #readingContainer.screenshot-mode .reading-title h1 {
-    font-size: 105px !important;
-    margin-top: 100px !important;
+    font-size: 110px !important;
+    margin-top: 125px !important;
     margin-bottom: 50px !important;
     padding: 0 !important;
     text-align: center !important;
-    color: #eeeaff!important;
+    color: #eeeaff !important;
 }
 
 #readingContainer.screenshot-mode .container {
@@ -96,6 +97,7 @@
 
 #readingContainer.screenshot-mode .reading-content {
     width: 100% !important;
+    padding: 0 0.5rem !important;
 }
 
 /* Screenshot Lines */
@@ -111,6 +113,8 @@
 #readingContainer.screenshot-mode .results-container {
     flex-direction: row !important;
     gap: 40px !important;
+    min-height: 550px !important;
+    padding: 0 !important;
     width: 100% !important;
     display: grid !important;
     grid-template-columns: repeat(1, 1fr) !important;
