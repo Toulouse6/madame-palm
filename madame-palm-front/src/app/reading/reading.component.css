@@ -42,11 +42,17 @@
 }
 
 /* Screenshot Layout */
-#readingContainer.screenshot-mode .wrapper::before {
-    bottom: 40% !important;
-    left: 0 !important;
-    background-position: center !important;
-    background-size: 72% !important;
+#readingContainer.screenshot-mode .wrapper:before {
+    content: "" !important;
+    position: absolute !important;
+    top: 7% !important;
+    left: 27% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-image: url('../../assets//images//la-grandmamma.png') !important;
+    background-size: contain !important;
+    z-index: -1 !important;
+    opacity: 1 !important;
 }
 
 #readingContainer.screenshot-mode .wrapper {
@@ -83,7 +89,7 @@
 #readingContainer.screenshot-mode .reading-title h1 {
     font-size: 110px !important;
     margin-top: 125px !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 55px !important;
     padding: 0 !important;
     text-align: center !important;
     color: #eeeaff !important;
