@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PalmReadingService } from '../services/palm-reading.service';
-import { NgIf } from '@angular/common';
 import { PalmReadingResponse } from '../models/reading.model';
+import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-home',
@@ -11,6 +11,7 @@ import { PalmReadingResponse } from '../models/reading.model';
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
 
     selectedFile: File | null = null;
@@ -24,16 +25,16 @@ export class HomeComponent implements OnInit {
     constructor(
         private router: Router,
         private palmReadingService: PalmReadingService
-    ) {
+    ) { }
+
+    ngOnInit() {
         this.backgroundAudio.currentTime = 0;
         this.backgroundAudio.loop = true;
         this.backgroundAudio.volume = 0.4;
 
         this.spinnerAudio.loop = true;
         this.spinnerAudio.volume = 0.8;
-    }
 
-    ngOnInit() {
         this.backgroundAudio.play().catch(() => {
             document.body.addEventListener('click', () => {
                 this.playBackgroundAudio();
@@ -41,17 +42,13 @@ export class HomeComponent implements OnInit {
         });
     }
 
-    // Background Audio & Video
+    // Background Audio
     private playBackgroundAudio(): void {
         if (this.backgroundAudio.paused) {
             this.backgroundAudio.play().catch(err => {
                 console.warn('Background audio failed to play.', err);
             });
         }
-    }
-
-    resumeSmokePlayback() {
-        history.replaceState({ ...history.state, triggerVideo: true }, '');
     }
 
     // On file select
@@ -61,7 +58,6 @@ export class HomeComponent implements OnInit {
 
         if (!file) return;
 
-        // Trigger Mobile audio
         this.playBackgroundAudio();
 
         this.selectedFile = file;
@@ -70,10 +66,9 @@ export class HomeComponent implements OnInit {
         reader.onload = () => {
             this.previewUrl = reader.result as string;
 
-            // Auto-submit
             setTimeout(() => {
                 this.submit();
-            }, 1000); // Delay to allow image preview
+            }, 1000);
         };
         reader.readAsDataURL(file);
     }
@@ -94,10 +89,8 @@ export class HomeComponent implements OnInit {
         this.spinnerAudio.currentTime = 0;
         this.spinnerAudio.play();
 
-        // Response
         this.palmReadingService.getPalmReading(this.selectedFile).subscribe({
             next: (response: PalmReadingResponse) => {
-
                 const reading = response?.reading;
 
                 setTimeout(() => {

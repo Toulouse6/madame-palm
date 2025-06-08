@@ -17,11 +17,11 @@
     }
 
     10% {
-        opacity: 0.8;
+        opacity: 0.2;
     }
 
     90% {
-        opacity: 0.8;
+        opacity: 0.2;
     }
 
     100% {
@@ -183,7 +183,7 @@
 /* Background Smoke Effect */
 .smoke-effect {
     opacity: 0;
-    animation: fadeSmoke 3.5s ease-in-out forwards;
+    animation: fadeSmoke 4s ease-in-out forwards;
     position: fixed;
     top: 0;
     left: 0;

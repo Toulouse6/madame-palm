@@ -223,10 +223,6 @@ button:hover,
 
 @media (max-width: 900px) {
 
-    .preview img {
-        width: 200px;
-    }
-
     .home-title h1 {
         font-size: 3.2rem;
     }

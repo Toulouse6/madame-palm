@@ -36,17 +36,31 @@ export class ReadingComponent implements OnInit, AfterViewInit {
     }
 
     // AfterViewInit for smoke effect
+
     ngAfterViewInit(): void {
         const shouldPlay = history.state?.['triggerVideo'] ?? false;
 
-        if (shouldPlay && this.smokeVideo) {
+        if (this.smokeVideo && shouldPlay) {
             const videoEl = this.smokeVideo.nativeElement;
+
+            videoEl.style.opacity = '0';
+            videoEl.style.zIndex = '0';
             videoEl.currentTime = 2.5;
-            videoEl.play().catch(err => {
-                console.warn('Smoke video failed:', err);
+
+            videoEl.play().catch(() => {
+                const playOnInteraction = () => {
+                    videoEl.play().catch(() => {
+                        console.warn('Video error.');
+                    });
+                };
+
+                // Retry on first interaction
+                document.addEventListener('click', playOnInteraction, { once: true });
+                document.addEventListener('touchstart', playOnInteraction, { once: true });
             });
         }
     }
+
     get hasReading(): boolean {
         return !!this.reading && this.reading !== 'No reading available.';
     }
@@ -69,7 +83,7 @@ export class ReadingComponent implements OnInit, AfterViewInit {
         }
     }
 
-    // Parse cobmined
+    // Parse combined
     private parseCombinedReading() {
         const lines = [
             { key: 'Heart Line', title: '𖥸 Heart Line' },
@@ -128,7 +142,6 @@ export class ReadingComponent implements OnInit, AfterViewInit {
 
     // Screenshot sharing
     shareReadingScreenshot() {
-
         if (this.isSharing) return;
         this.isSharing = true;
 
@@ -206,7 +219,6 @@ export class ReadingComponent implements OnInit, AfterViewInit {
                     const link = document.createElement('a');
                     link.href = URL.createObjectURL(blob);
                     link.download = 'my-palm-reading-story.png';
-                    link.click();
                     this.isSharing = false;
                 }
             }, 'image/png', 0.95);
