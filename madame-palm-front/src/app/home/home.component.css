@@ -11,13 +11,13 @@
 }
 
 .intro {
-    font-family: 'Gentium-italic', Arial, sans-serif;
+    font-family: 'Sephir', Arial, sans-serif;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     color: #fff;
     width: 100%;
     line-height: 1;
     font-size: 2rem;
-    margin: -1.8rem 0 2.5rem 0;
+    margin: -2.2rem 0 2.5rem 0;
 }
 
 /* File & input */
@@ -81,7 +81,7 @@
 
     .intro {
         font-size: 1.6rem;
-        margin: -0.8rem 0 2.5rem 0;
+        margin: -1rem 0 2.5rem 0;
     }
 }
 
@@ -98,7 +98,7 @@
 
     .intro {
         font-size: 1.5rem;
-        margin: -1.2rem 0 2rem 0;
+        margin: -1.5rem 0 2rem 0;
     }
 }
 

@@ -14,8 +14,8 @@
 }
 
 @font-face {
-    font-family: 'Gentium-italic';
-    src: url('assets/fonts/gentium-plus.ttf');
+    font-family: 'Sephir';
+    src: url('assets/fonts/sephir.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -219,6 +219,11 @@ button:hover,
 
 @media (max-width: 375px) {
 
+   
+    .wrapper:before {
+        transform: translate(-50%, -69%) !important;
+    }
+   
     button {
         font-size: 1rem;
     }
