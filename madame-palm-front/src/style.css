@@ -83,7 +83,7 @@ body {
     justify-content: center;
 }
 
-/* Errors Messages */
+/* Errors messages */
 .error-message {
     color: white;
     opacity: 0;
@@ -152,7 +152,6 @@ button:hover,
     .container {
         width: 100%;
     }
-
 }
 
 @media (max-width: 900px) {
@@ -173,7 +172,6 @@ button:hover,
     .flex-wrapper {
         width: 100%;
     }
-
 }
 
 @media (max-width: 600px) {
@@ -182,8 +180,8 @@ button:hover,
         width: 24rem;
         transform: translate(-50%, -70%) !important;
     }
-
 }
+
 
 /* Mobile */
 @media (max-width: 440px) {
@@ -226,7 +224,6 @@ button:hover,
     }
 }
 
-
 @media (max-width: 360px) {
 
     html,
@@ -244,15 +241,13 @@ button:hover,
     }
 }
 
-
 @media (max-width: 320px) {
 
     .wrapper:before {
         transform: translate(-50%, -68%) !important;
     }
 
-       button {
+    button {
         font-size: 0.8rem;
     }
-
 }

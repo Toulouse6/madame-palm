@@ -1,10 +1,4 @@
-/* Animations */
-@keyframes fadeInWarning {
-    to {
-        opacity: 1;
-    }
-}
-
+/* Typography */
 .home-title h1 {
     text-align: center;
     text-transform: capitalize;
@@ -26,11 +20,11 @@
     margin: -1.8rem 0 2.5rem 0;
 }
 
+/* File & input */
+
 .file-uploaded {
     display: none;
 }
-
-/* File & User Input */
 
 .input-box {
     position: absolute;
@@ -50,7 +44,7 @@
     margin-top: 0.5rem;
 }
 
-/* Loading Spinner */
+/* Loading spinner */
 .loading-spinner {
     margin-top: -1rem;
     display: flex;
@@ -64,12 +58,17 @@
     width: 13rem;
 }
 
+
 /* Responsive */
 
-@media (max-width: 900px) {
+@media (max-width: 915px) {
 
     .home-title h1 {
         font-size: 3.2rem;
+    }
+
+    .loading-spinner {
+    margin-top: 0rem;
     }
 }
 
@@ -84,8 +83,6 @@
         font-size: 1.6rem;
         margin: -0.8rem 0 2.5rem 0;
     }
-
-
 }
 
 @media (max-width: 600px) {
@@ -93,10 +90,6 @@
     .home-title h1 {
         font-size: 2.3rem;
         margin: 5.5rem 0 1.5rem;
-    }
-
-    .loading-spinner {
-        margin-top: 0;
     }
 
     .loading-spinner img {
@@ -107,8 +100,8 @@
         font-size: 1.5rem;
         margin: -1.2rem 0 2rem 0;
     }
-
 }
+
 
 /* Mobile */
 @media (max-width: 440px) {
@@ -137,7 +130,6 @@
         margin-top: 1rem;
         width: 150px;
     }
-
 }
 
 @media (max-width: 390px) {
@@ -150,5 +142,4 @@
     .intro {
         font-size: 1.2rem;
     }
-
 }
