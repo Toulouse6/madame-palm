@@ -17,11 +17,11 @@
     }
 
     10% {
-        opacity: 0.3;
+        opacity: 0.25;
     }
 
     90% {
-        opacity: 0.3;
+        opacity: 0.25;
     }
 
     100% {
@@ -29,7 +29,9 @@
     }
 }
 
-/* Screenshot Mode */
+
+/*********** Screenshot Mode ***********/
+
 #readingContainer.screenshot-mode {
     background: linear-gradient(135deg, #2f2b4d 0%, #393466 20%, #403971 35%, #453676 50%, #342b5b 65%, #2c254e 80%, #221d3a 100%) !important;
     color: #423865 !important;
@@ -179,6 +181,9 @@
 #readingContainer.screenshot-mode .actions {
     display: none !important;
 }
+
+
+/*********** Reading Component ***********/
 
 /* Background Smoke Effect */
 .smoke-effect {
@@ -398,8 +403,8 @@ h2 {
 @media (max-width: 440px) {
 
     .reading-title h1 {
-        margin: 2.2rem 0 2rem 0;
-        font-size: 2.8rem;
+        margin: 2rem 0 2.5rem 0;
+        font-size: 2.7rem;
     }
 
     .results-container {
@@ -419,7 +424,7 @@ h2 {
 
     .line-content p,
     .summary-card p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .share-buttons {
@@ -427,12 +432,29 @@ h2 {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 430px) {
 
-    .reading-title h1 {
-        font-size: 2.4rem;
-        margin: 1rem 0 1.5rem 0;
+    .line-content p,
+    .summary-card p {
+        font-size: 1.2rem;
     }
+
+}
+
+@media (max-width: 412px) {
+
+       .reading-title h1 {
+        font-size: 2.5rem;
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    .share-buttons {
+        margin-top: 0.5rem;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 390px) {
 
     .results-container {
         padding: 0 0.2rem;
@@ -440,16 +462,15 @@ h2 {
 
     .line-content p,
     .summary-card p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .share-buttons {
-        margin-top: 0.2rem;
+        margin-top: 1rem;
         gap: 10px;
     }
 
 }
-
 
 @media (max-width: 375px) {
 
@@ -458,11 +479,21 @@ h2 {
     }
 
     .reading-title h1 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
+        margin: 0.5rem 0 1.5rem 0;
+    }
+
+    .share-buttons {
+        padding: 0;
     }
 
     h2 {
         font-size: 1.1rem;
+    }
+
+    .line-content p,
+    .summary-card p {
+        font-size: 0.9rem;
     }
 
     .palm-line {
@@ -474,11 +505,33 @@ h2 {
         margin-top: 0;
     }
 
+    .share-buttons {
+        margin-top: 0.5rem;
+    }
+
 }
 
 @media (max-width: 360px) {
 
-    .share-buttons {
-        margin-top: 0.5rem;
+    .reading-title h1 {
+        font-size: 2.2rem;
     }
+
+    .line-content p,
+    .summary-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .reading-title h1 {
+        font-size: 1.9rem;
+    }
+
+    .line-content p,
+    .summary-card p {
+        font-size: 0.8rem;
+    }
+
 }

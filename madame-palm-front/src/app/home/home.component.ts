@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
     selectedFile: File | null = null;
     previewUrl: string | null = null;
-    isLoading = true;
+    isLoading = false;
     errorMessage: string | null = null;
 
     private backgroundAudio = new Audio('assets/audio/realm-of-fairy.mp3');
