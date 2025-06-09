@@ -218,7 +218,6 @@ button:hover,
 }
 
 @media (max-width: 375px) {
-
    
     .wrapper:before {
         transform: translate(-50%, -69%) !important;
