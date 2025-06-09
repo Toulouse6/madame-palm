@@ -67,7 +67,7 @@ body {
     left: 50%;
     width: 30rem;
     height: 100%;
-    background-image: url('assets/images/la-grandmamma.png');
+    background-image: url('assets/images/la-grandmamma.png') !important;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -218,11 +218,11 @@ button:hover,
 }
 
 @media (max-width: 375px) {
-   
+
     .wrapper:before {
         transform: translate(-50%, -69%) !important;
     }
-   
+
     button {
         font-size: 1rem;
     }

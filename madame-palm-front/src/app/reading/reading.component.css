@@ -379,7 +379,6 @@ h2 {
 
 /* Screenshot Layout */
 #readingContainer.screenshot-mode .wrapper:before {
-    content: "" !important;
     position: absolute !important;
     top: -18% !important;
     left: 0 !important;
